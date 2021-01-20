@@ -31,4 +31,6 @@
     - by default it will append if already data is present
 13. `LOAD DATA LOCAL INPATH 'pathof the file' OVERWRITE INTO TABLE tableName;`
     - overwrite the data into the table
-14.
+14. `CREATE EXTERNAL TABLE tableName(col....)`
+    - creates a external table
+    - `external vs managed table` if external table is droped the metadata from metastore is deleted not the the data in the hdfs location is deleted but in managed table it is deleted from the hdfs location also.
