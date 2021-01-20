@@ -26,4 +26,9 @@
 11. `DESCRIBE FORMATTED tableName`
     - gives metadata about the table
     - **metadata are stored etastore whcih are RDBMS db like mysql, oracle**
-12. `
+12. `LOAD DATA LOCAL INPATH 'pathof the file' INTO TABLE tableName;`
+    - loads the local file data into the table
+    - by default it will append if already data is present
+13. `LOAD DATA LOCAL INPATH 'pathof the file' OVERWRITE INTO TABLE tableName;`
+    - overwrite the data into the table
+14.
