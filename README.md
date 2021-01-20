@@ -28,7 +28,9 @@
     - **metadata are stored etastore whcih are RDBMS db like mysql, oracle**
 12. `LOAD DATA LOCAL INPATH 'pathof the file' INTO TABLE tableName;`
     - loads the local file data into the table
-    - by default it will append if already data is present
+    - by default it will append if already data is present- it will throw error if the file format of table and file is different
+    - eg, if source file is in txt,csv etc and table is having `store format` as orc then it will throw error to avoid this use stage table technique.
+    - loading table from hdfs moves the file so it is much faster as compared to loading from local
 13. `LOAD DATA LOCAL INPATH 'pathof the file' OVERWRITE INTO TABLE tableName;`
     - overwrite the data into the table
 14. `CREATE EXTERNAL TABLE tableName(col....)`
