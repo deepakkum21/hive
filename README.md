@@ -41,3 +41,9 @@
     - only applicable in managed table not in external table
 16. `DROP TABLE tableName`
     - deletes the table but in case of external table only metadata from metastore is deleted and not the dtat from hdfs location
+17. `PARTITION BY (colName dataType)`
+    - the colName should be different from the col defined as regular one at create table
+    - will give error if tried to load directly into the table as their will be missmatch of col (partition col might not there)
+    - `static partition`
+      - in this manually have to create partition usig `alter`
+      - `ALTER TABLE tableName ADD PARTITION(partitionColName=value) PARTITION(partitionColName=value2);`
