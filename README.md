@@ -23,3 +23,7 @@
    - to switch to the particular db
 10. `SHOW CREATE TABLE tableName`
     - it shows the create table cmd used to create the table
+11. `DESCRIBE FORMATTED tableName`
+    - gives metadata about the table
+    - **metadata are stored etastore whcih are RDBMS db like mysql, oracle**
+12. `
