@@ -17,3 +17,9 @@
 7. `hdfs -ls /app/hive/warehouse`
    - /app/hive/warehouse is the the loaction where all the databases are created.
    - hive.metastore.warehouse.dir is the property where the location value is stored.
+8. `CREATE DATABASE IF NOT EXISTS dbName`
+   - to create a db with dbName
+9. `USE dbName`
+   - to switch to the particular db
+10. `SHOW CREATE TABLE tableName`
+    - it shows the create table cmd used to create the table
