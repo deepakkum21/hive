@@ -1,4 +1,4 @@
-# hive
+# HIVE
 
 ## HIVE COMMANDS:-
 
@@ -10,3 +10,10 @@
    - to see the value of the property
 4. `SET propertyName = value`
    - to set the new value for the property
+5. `ls -al | grep history`
+   - to see the histrory cmds. go to home using `cd`
+6. `dfs -ls filelocation`
+   - to the files using dfs in hive cli
+7. `hdfs -ls /app/hive/warehouse`
+   - /app/hive/warehouse is the the loaction where all the databases are created.
+   - hive.metastore.warehouse.dir is the property where the location value is stored.
