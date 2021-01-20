@@ -34,3 +34,7 @@
 14. `CREATE EXTERNAL TABLE tableName(col....)`
     - creates a external table
     - `external vs managed table` if external table is droped the metadata from metastore is deleted not the the data in the hdfs location is deleted but in managed table it is deleted from the hdfs location also.
+15. `TRUNCATE TABLE tableName`
+    - deletes the data from the table
+16. `DROP TABLE tableName`
+    - deletes the table but in case of external table only metadata from metastore is deleted and not the dtat from hdfs location
