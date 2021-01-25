@@ -47,4 +47,4 @@
     - `static partition`
       - in this manually have to create partition usig `alter`
       - `ALTER TABLE tableName ADD PARTITION(partitionColName=value) PARTITION(partitionColName=value2);`
-      - the above cmd will create 2 partition dir in the dfs location that can be seen using dfs -ls location
+      - the above cmd will create 2 partition dir in the dfs location that can be seen using dfs -ls location.
